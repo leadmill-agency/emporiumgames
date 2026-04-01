@@ -87,19 +87,11 @@
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: transparent;
-  transition: all 0.4s ease;
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.nav-visible {
-  transform: translateY(0);
-  opacity: 1;
-  background: rgba(18, 16, 13, 0.94);
+  background: rgba(18, 16, 13, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(232, 168, 23, 0.08);
+  transition: all 0.4s ease;
 }
 
 .nav-inner {
