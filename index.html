@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emporium Games — Houston's Gaming Hall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Navigation — hidden on hero, reveals on scroll -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-nav.png" alt="Emporium Games">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Book an Event</a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero — cinematic, left-aligned -->
+  <section class="hero">
+    <div class="hero-content reveal">
+      <img src="assets/logo-hero.png" alt="Emporium Games" style="height: 80px; width: auto; margin-bottom: var(--space-md);">
+      <h1>Where Houston<br>Comes to <strong>Game</strong></h1>
+      <p class="subtitle">Board games. Card battles. Private events. A full bar. No NPCs. Open late on weekends.</p>
+      <a href="contact.html" class="btn btn-primary">Plan Your Visit</a>
+    </div>
+  </section>
+
+  <!-- The Experience — bento grid, asymmetric -->
+  <section class="section-md bg-dark">
+    <div class="container">
+      <span class="eyebrow">The Experience</span>
+      <h2 style="margin-bottom: var(--space-lg); max-width: 500px;">Everything under<br>one roof</h2>
+
+      <div class="bento-grid">
+        <div class="bento-featured">
+          <h3>Private Events &amp; Parties</h3>
+          <p>Birthdays, team-building, bachelor parties. Full hall or private rooms. We handle catering, setup, and the playlist.</p>
+          <a href="contact.html" class="btn-text" style="margin-top: var(--space-sm);">Book a room</a>
+        </div>
+        <div class="bento-card">
+          <h3>500+ Board Games</h3>
+          <p>Gateway classics to deep strategy. Staff picks updated weekly.</p>
+        </div>
+        <div class="bento-card">
+          <h3>Card Gaming</h3>
+          <p>MTG, Pokemon, Lorcana. Draft nights, tournaments, singles in stock.</p>
+        </div>
+        <div class="bento-card">
+          <h3>Full Bar &amp; Kitchen</h3>
+          <p>Craft beers, mead flights, tavern-inspired plates. Not vending machines.</p>
+        </div>
+        <div class="bento-card">
+          <h3>Tournaments</h3>
+          <p>Weekly competitive play. Ranked seasons. Prizes that don't suck.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events — horizontal list, not a grid -->
+  <section class="section-sm bg-gradient-subtle">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-lg);">
+        <div>
+          <span class="eyebrow">Coming Up</span>
+          <h2>This week at Emporium</h2>
+        </div>
+        <a href="events.html" class="btn-text">All events</a>
+      </div>
+
+      <div class="event-strip-card">
+        <div class="event-strip-date">Fri, Apr 4</div>
+        <div class="event-strip-info">
+          <h3>Friday Night Magic — Modern Format</h3>
+          <p>7 PM &middot; Bring your deck or draft on-site &middot; Top 8 prizes</p>
+        </div>
+        <a href="contact.html" class="btn-text">Reserve</a>
+      </div>
+      <div class="event-strip-card">
+        <div class="event-strip-date">Sat, Apr 5</div>
+        <div class="event-strip-info">
+          <h3>Board Game Brawl — Worker Placement Night</h3>
+          <p>6 PM &middot; Agricola, Everdell, Viticulture &middot; Beginners welcome</p>
+        </div>
+        <a href="events.html" class="btn-text">Details</a>
+      </div>
+      <div class="event-strip-card">
+        <div class="event-strip-date">Wed, Apr 9</div>
+        <div class="event-strip-info">
+          <h3>D&amp;D One-Shot — The Lost Mine</h3>
+          <p>7:30 PM &middot; Pre-made characters available &middot; 6 spots</p>
+        </div>
+        <a href="contact.html" class="btn-text">Reserve</a>
+      </div>
+      <div class="event-strip-card">
+        <div class="event-strip-date">Fri, Apr 11</div>
+        <div class="event-strip-info">
+          <h3>Trivia Night — Fantasy &amp; Sci-Fi Edition</h3>
+          <p>8 PM &middot; Teams of 2–6 &middot; Half-price apps during event</p>
+        </div>
+        <a href="events.html" class="btn-text">Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Play — warm cream section for contrast -->
+  <section class="section-md bg-parchment section-light">
+    <div class="container">
+      <div class="split-wide">
+        <div>
+          <span class="eyebrow">Open Play</span>
+          <h2>Walk in any night</h2>
+          <p style="margin-top: var(--space-sm); max-width: 440px;">No reservation needed. $5 cover gets you unlimited access to 500+ games, all night. Our staff will teach you anything on the shelf.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-md);">Plan Your Visit</a>
+        </div>
+        <div class="photo-container" style="min-height: 350px;">
+          <img src="assets/photos/friends-playing.jpg" alt="Friends playing board games" class="photo-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Hall — full-width overlay section -->
+  <section class="overlay-section">
+    <div class="overlay-bg">
+      <div class="photo-container" style="min-height: 100%;">
+        <img src="assets/photos/bar-interior.jpg" alt="Emporium Games interior" class="photo-img">
+      </div>
+    </div>
+    <div class="overlay-content">
+      <div class="info-block">
+        <span class="eyebrow">The Hall</span>
+        <h2>Not your average<br>game store</h2>
+        <p style="margin: var(--space-md) 0;">Purpose-built for play, competition, and hanging out. Dark wood, amber lighting, proper tables, and a bar that serves more than soda.</p>
+        <ul class="feature-list" style="margin-bottom: var(--space-lg);">
+          <li>500+ game library, curated and maintained</li>
+          <li>Full bar and kitchen, open late</li>
+          <li>Staff who play and can teach any game</li>
+          <li>Private rooms for campaigns and parties</li>
+        </ul>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); max-width: 360px;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.25rem;">Hours</span>
+            <p style="font-size: var(--fs-small); color: var(--text-on-dark-muted); margin: 0;">Mon–Thu 4p–12a<br>Fri–Sat 2p–2a<br>Sun 12p–10p</p>
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.25rem;">Location</span>
+            <p style="font-size: var(--fs-small); color: var(--text-on-dark-muted); margin: 0;">123 Tavern Street<br>Houston, TX 77002<br>(713) 555-0199</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Strip — visual break, 4 atmospheric photos -->
+  <section class="section-sm bg-warm-black">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-md);">
+        <span class="eyebrow" style="margin-bottom: 0;">See the Space</span>
+        <a href="gallery.html" class="btn-text">Full gallery</a>
+      </div>
+      <div class="gallery-strip">
+        <div class="gallery-strip-item">
+          <div class="photo-container" style="min-height: 260px;">
+            <img src="assets/photos/storefront-night.jpg" alt="Emporium Games exterior at night" class="photo-img">
+          </div>
+        </div>
+        <div class="gallery-strip-item gallery-strip-wide">
+          <div class="photo-container" style="min-height: 260px;">
+            <img src="assets/photos/bar-taps.jpg" alt="Craft beer taps at the bar" class="photo-img">
+          </div>
+        </div>
+        <div class="gallery-strip-item">
+          <div class="photo-container" style="min-height: 260px;">
+            <img src="assets/photos/board-games-shelf.jpg" alt="Board game library" class="photo-img">
+          </div>
+        </div>
+        <div class="gallery-strip-item">
+          <div class="photo-container" style="min-height: 260px;">
+            <img src="assets/photos/private-room.jpg" alt="Private event room" class="photo-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food & Drink — warm cream section, menu-style -->
+  <section class="section-md bg-parchment section-light">
+    <div class="container">
+      <div class="split-narrow">
+        <div class="photo-container" style="min-height: 480px;">
+          <img src="assets/photos/tavern-burger.jpg" alt="Tavern burger with fries" class="photo-img">
+        </div>
+        <div>
+          <span class="eyebrow">The Tavern</span>
+          <h2>Real food.<br>Real drinks.</h2>
+          <p style="margin-top: var(--space-sm); max-width: 440px;">This isn't a snack bar with microwaved nachos. Emporium has a full kitchen and a proper bar — tavern-inspired plates, craft beers, mead flights, and cocktails worth ordering a second round of.</p>
+
+          <div class="menu-preview">
+            <div class="menu-category">
+              <h4>From the Kitchen</h4>
+              <div class="menu-item"><span>The Tavern Burger</span><span class="menu-dot"></span><span>$14</span></div>
+              <div class="menu-item"><span>Loaded Quest Fries</span><span class="menu-dot"></span><span>$9</span></div>
+              <div class="menu-item"><span>Dragon Wings (6 pc)</span><span class="menu-dot"></span><span>$12</span></div>
+              <div class="menu-item"><span>Healer's Bowl</span><span class="menu-dot"></span><span>$11</span></div>
+            </div>
+            <div class="menu-category">
+              <h4>From the Bar</h4>
+              <div class="menu-item"><span>Craft Draft (16 oz)</span><span class="menu-dot"></span><span>$7</span></div>
+              <div class="menu-item"><span>Mead Flight (4 tasters)</span><span class="menu-dot"></span><span>$15</span></div>
+              <div class="menu-item"><span>The Critical Hit (cocktail)</span><span class="menu-dot"></span><span>$12</span></div>
+              <div class="menu-item"><span>Potion of Healing (NA)</span><span class="menu-dot"></span><span>$5</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials — stacked quotes, not uniform cards -->
+  <section class="section-md bg-gradient-warm">
+    <div class="container">
+      <span class="eyebrow">What People Say</span>
+      <h2 style="margin-bottom: var(--space-lg); max-width: 400px;">Houston's favorite<br>game night spot</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <blockquote>Best game night spot in Houston, hands down. The atmosphere is incredible and the staff actually know the games. We come every Friday.</blockquote>
+          <cite>Alex R. — Weekly regular</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>We hosted our company team-building here and everyone loved it. The private room was perfect. Already booked for next quarter.</blockquote>
+          <cite>Sarah M. — Event host</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>My son's birthday party was perfect. The games, the food, the private room — everything was handled. He's already asking when he can come back.</blockquote>
+          <cite>James T. — Parent</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA — minimal, type-driven -->
+  <section class="cta-section bg-deep">
+    <div class="container">
+      <h2>The table's<br>waiting</h2>
+      <a href="contact.html" class="btn btn-primary">Book an Event</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-nav.png" alt="Emporium Games">
+          <p>A real-world gaming hall for players, parties, and late nights. Houston's home for game night.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Visit</h4>
+            <p>123 Tavern Street, Houston, TX 77002</p>
+            <p>(713) 555-0199</p>
+            <p>hello@emporiumgames.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Emporium Games</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
