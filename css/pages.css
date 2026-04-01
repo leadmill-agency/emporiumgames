@@ -474,9 +474,34 @@
   color: var(--sign-gold);
 }
 
+.quick-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.quick-info-grid h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-on-light);
+  margin-bottom: 0.25rem;
+}
+
+.quick-info-grid p {
+  font-size: var(--fs-small);
+  color: var(--text-on-light-secondary);
+}
+
 @media (max-width: 767px) {
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .quick-info-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    text-align: left;
   }
 
   .events-list {
