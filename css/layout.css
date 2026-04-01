@@ -45,7 +45,7 @@
    ═══════════════════════════════════════ */
 
 .hero {
-  min-height: 60vh;
+  min-height: auto;
   display: flex;
   align-items: flex-end;
   padding: 0 var(--space-md) var(--space-2xl);
@@ -60,13 +60,15 @@
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
   padding: 0;
+  max-height: 520px;
+  overflow: hidden;
 }
 
 .hero.hero-split .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: var(--nav-height) var(--space-lg) var(--space-lg) var(--space-xl);
+  justify-content: center;
+  padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-xl);
   max-width: none;
   margin: 0;
 }
@@ -80,6 +82,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 30%;
   display: block;
 }
 
@@ -357,16 +360,16 @@
 
   .hero.hero-split {
     grid-template-columns: 1fr;
-    min-height: auto;
+    max-height: none;
   }
 
   .hero.hero-split .hero-content {
-    padding: var(--space-xl) var(--space-md) var(--space-lg);
+    padding: var(--space-lg) var(--space-md);
     order: 2;
   }
 
   .hero-image {
-    height: 35vh;
+    height: 250px;
     order: 1;
   }
 
