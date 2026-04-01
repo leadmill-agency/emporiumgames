@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Emporium Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo-nav.png" alt="Emporium Games"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="nav-cart" onclick="alert('Shopping cart — coming soon!')">&#128722;<span class="nav-cart-count">0</span></a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero hero-short">
+    <div class="hero-content">
+      <span class="eyebrow">Shop</span>
+      <h1>Board games, cards<br>&amp; <strong>more</strong></h1>
+    </div>
+  </section>
+
+  <!-- Filters + Product Grid -->
+  <section class="section-md bg-dark">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg); flex-wrap: wrap; gap: var(--space-sm);">
+        <div class="filter-bar" style="margin-bottom: 0;">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Board Games</button>
+          <button class="filter-btn">Trading Cards</button>
+          <button class="filter-btn">RPGs</button>
+          <button class="filter-btn">Accessories</button>
+        </div>
+        <span style="font-size: var(--fs-small); color: var(--text-on-dark-muted);">16 products</span>
+      </div>
+
+      <div class="product-grid">
+        <!-- Board Games -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/board-game-1.jpg" alt="Catan">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Board Games</p>
+            <h3>Catan</h3>
+            <span class="product-price">$44.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/board-game-2.jpg" alt="Wingspan">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Board Games</p>
+            <h3>Wingspan</h3>
+            <span class="product-price">$54.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/board-game-3.jpg" alt="Ticket to Ride">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Board Games</p>
+            <h3>Ticket to Ride</h3>
+            <span class="product-price">$39.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/board-game-4.jpg" alt="Terraforming Mars">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Board Games</p>
+            <h3>Terraforming Mars</h3>
+            <span class="product-price">$49.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Trading Cards -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/mtg-cards.jpg" alt="MTG Draft Booster Box">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Trading Cards</p>
+            <h3>MTG Draft Booster Box</h3>
+            <span class="product-price">$129.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/pokemon-cards.jpg" alt="Pokemon Elite Trainer Box">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Trading Cards</p>
+            <h3>Pokemon Elite Trainer Box</h3>
+            <span class="product-price">$44.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/card-game.jpg" alt="Lorcana Starter Deck">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Trading Cards</p>
+            <h3>Lorcana Starter Deck</h3>
+            <span class="product-price">$16.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/mtg-cards.jpg" alt="MTG Commander Deck">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Trading Cards</p>
+            <h3>MTG Commander Deck</h3>
+            <span class="product-price">$49.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- RPGs -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/dnd-books.jpg" alt="D&D Player's Handbook">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">RPGs</p>
+            <h3>D&amp;D Player's Handbook</h3>
+            <span class="product-price">$49.95</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/dnd-books.jpg" alt="D&D Monster Manual">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">RPGs</p>
+            <h3>D&amp;D Monster Manual</h3>
+            <span class="product-price">$49.95</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/dice-set.jpg" alt="Dice Set (7pc)">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">RPGs</p>
+            <h3>Polyhedral Dice Set (7pc)</h3>
+            <span class="product-price">$12.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/dice-set.jpg" alt="Premium Metal Dice Set">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">RPGs</p>
+            <h3>Premium Metal Dice Set</h3>
+            <span class="product-price">$34.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Accessories -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/card-sleeves.jpg" alt="Card Sleeves (100ct)">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Accessories</p>
+            <h3>Card Sleeves (100ct)</h3>
+            <span class="product-price">$9.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/playmat.jpg" alt="Gaming Playmat">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Accessories</p>
+            <h3>Gaming Playmat</h3>
+            <span class="product-price">$24.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/accessories.jpg" alt="Deck Box">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Accessories</p>
+            <h3>Deck Box — Premium</h3>
+            <span class="product-price">$14.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="assets/photos/products/accessories.jpg" alt="Card Binder">
+          </div>
+          <div class="product-card-info">
+            <p class="product-category">Accessories</p>
+            <h3>9-Pocket Card Binder</h3>
+            <span class="product-price">$19.99</span>
+            <button class="btn-cart" onclick="alert('Added to cart! (mockup)')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section bg-deep">
+    <div class="container">
+      <h2>Can't find what<br>you need?</h2>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-nav.png" alt="Emporium Games">
+          <p>Board games, trading cards, RPGs, and accessories. New Caney's home for tabletop gaming.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Visit</h4>
+            <p>22564 Community Dr, New Caney, TX 77357</p>
+            <p>(713) 555-0199</p>
+            <p>hello@emporiumgames.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Emporium Games</p></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
