@@ -41,7 +41,7 @@
 }
 
 /* ═══════════════════════════════════════
-   HERO — cinematic, left-aligned
+   HERO — split: text left, image right
    ═══════════════════════════════════════ */
 
 .hero {
@@ -52,6 +52,44 @@
   position: relative;
   background: var(--deep-brown);
   overflow: hidden;
+}
+
+/* Split hero — text left, image right */
+.hero.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  padding: 0;
+}
+
+.hero.hero-split .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--nav-height) var(--space-lg) var(--space-2xl) var(--space-xl);
+  max-width: none;
+  margin: 0;
+}
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Soft blend from image into the dark left side */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--deep-brown) 0%, transparent 30%);
+  pointer-events: none;
 }
 
 /* Vignette + atmospheric light */
@@ -315,6 +353,25 @@
   .hero {
     min-height: 85vh;
     padding-bottom: var(--space-xl);
+  }
+
+  .hero.hero-split {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero.hero-split .hero-content {
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+    order: 2;
+  }
+
+  .hero-image {
+    height: 45vh;
+    order: 1;
+  }
+
+  .hero-image::after {
+    background: linear-gradient(180deg, transparent 50%, var(--deep-brown) 100%);
   }
 
   .hero::after {
